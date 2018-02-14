@@ -17,6 +17,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+       HOLIDataInitializer().initialize()
+        let appDelegate = UIApplication.shared.delegate as! AppDelegate
+        let context = appDelegate.persistentContainer.viewContext
+        
+        let holidayFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Holiday")
+        
+        do {
+            let fetchedHolidays = try context.fetch(holidayFetch) as! [Holiday]
+            if(fetchedHolidays.count>0){
+            for  holi in fetchedHolidays{
+                print(holi.date!)
+            }
+            }else{
+                print("No holidays")
+            }
+            
+        } catch {
+            fatalError("Failed to fetch jobs: \(error)")
+        }
+        
         return true
     }
 

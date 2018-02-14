@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A79EB708D05C107C271C9C92 /* Pods_holidays.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A311E5BC9F884D345206776E /* Pods_holidays.framework */; };
 		B6A15A701FF7464300EBF97B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A15A6F1FF7464300EBF97B /* AppDelegate.swift */; };
 		B6A15A721FF7464300EBF97B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6A15A711FF7464300EBF97B /* ViewController.swift */; };
 		B6A15A751FF7464300EBF97B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A15A731FF7464300EBF97B /* Main.storyboard */; };
 		B6A15A781FF7464300EBF97B /* holidays.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B6A15A761FF7464300EBF97B /* holidays.xcdatamodeld */; };
 		B6A15A7A1FF7464300EBF97B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6A15A791FF7464300EBF97B /* Assets.xcassets */; };
 		B6A15A7D1FF7464300EBF97B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6A15A7B1FF7464300EBF97B /* LaunchScreen.storyboard */; };
+		B6D9531320300A0A00DAFB28 /* ColorsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9531220300A0A00DAFB28 /* ColorsConfig.swift */; };
+		B6D95315203149D800DAFB28 /* HOLCalendarCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D95314203149D800DAFB28 /* HOLCalendarCell.swift */; };
+		B6D9531720314B2900DAFB28 /* HOLCalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9531620314B2900DAFB28 /* HOLCalendarViewController.swift */; };
+		B6D953192033E86400DAFB28 /* HexUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D953182033E86400DAFB28 /* HexUIColor.swift */; };
+		B6D9531B2033F64200DAFB28 /* CapitalizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9531A2033F64200DAFB28 /* CapitalizeExtension.swift */; };
+		B6D9531D2033FB9300DAFB28 /* HOLCalendarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9531C2033FB9300DAFB28 /* HOLCalendarInteractor.swift */; };
+		B6E014E5202FD3DB00ABC679 /* HOLIDataInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E014E4202FD3DB00ABC679 /* HOLIDataInitializer.swift */; };
+		B6E69616200B17FF0012A196 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E69614200B17FE0012A196 /* MenuViewController.swift */; };
+		B6E69617200B17FF0012A196 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E69615200B17FF0012A196 /* BaseViewController.swift */; };
+		B6E69620200B1C370012A196 /* PeriodsConfigurationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E6961F200B1C370012A196 /* PeriodsConfigurationViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		48829532AFBC36F6B9025B37 /* Pods-holidays.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holidays.release.xcconfig"; path = "Pods/Target Support Files/Pods-holidays/Pods-holidays.release.xcconfig"; sourceTree = "<group>"; };
+		A311E5BC9F884D345206776E /* Pods_holidays.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_holidays.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B60CD2A8202FFAE100EFE256 /* holidays-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "holidays-Bridging-Header.h"; sourceTree = "<group>"; };
 		B6A15A6C1FF7464300EBF97B /* holidays.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = holidays.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B6A15A6F1FF7464300EBF97B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B6A15A711FF7464300EBF97B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +38,17 @@
 		B6A15A791FF7464300EBF97B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B6A15A7C1FF7464300EBF97B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B6A15A7E1FF7464300EBF97B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D9531220300A0A00DAFB28 /* ColorsConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorsConfig.swift; sourceTree = "<group>"; };
+		B6D95314203149D800DAFB28 /* HOLCalendarCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOLCalendarCell.swift; sourceTree = "<group>"; };
+		B6D9531620314B2900DAFB28 /* HOLCalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOLCalendarViewController.swift; sourceTree = "<group>"; };
+		B6D953182033E86400DAFB28 /* HexUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexUIColor.swift; sourceTree = "<group>"; };
+		B6D9531A2033F64200DAFB28 /* CapitalizeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalizeExtension.swift; sourceTree = "<group>"; };
+		B6D9531C2033FB9300DAFB28 /* HOLCalendarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOLCalendarInteractor.swift; sourceTree = "<group>"; };
+		B6E014E4202FD3DB00ABC679 /* HOLIDataInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOLIDataInitializer.swift; sourceTree = "<group>"; };
+		B6E69614200B17FE0012A196 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		B6E69615200B17FF0012A196 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		B6E6961F200B1C370012A196 /* PeriodsConfigurationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodsConfigurationViewController.swift; sourceTree = "<group>"; };
+		FD72C45CCB178BF25EE097D9 /* Pods-holidays.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-holidays.debug.xcconfig"; path = "Pods/Target Support Files/Pods-holidays/Pods-holidays.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +56,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A79EB708D05C107C271C9C92 /* Pods_holidays.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		42992A23AAE811A8277594DA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A311E5BC9F884D345206776E /* Pods_holidays.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B6A15A631FF7464300EBF97B = {
 			isa = PBXGroup;
 			children = (
+				B60CD2A8202FFAE100EFE256 /* holidays-Bridging-Header.h */,
 				B6A15A6E1FF7464300EBF97B /* holidays */,
 				B6A15A6D1FF7464300EBF97B /* Products */,
+				DA4DEA0644C26036311D5AAC /* Pods */,
+				42992A23AAE811A8277594DA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +93,9 @@
 		B6A15A6E1FF7464300EBF97B /* holidays */ = {
 			isa = PBXGroup;
 			children = (
+				B6E014E3202FD3AC00ABC679 /* helpers */,
+				B6E69618200B19750012A196 /* modules */,
+				B6E69613200B17E60012A196 /* drawer */,
 				B6A15A6F1FF7464300EBF97B /* AppDelegate.swift */,
 				B6A15A711FF7464300EBF97B /* ViewController.swift */,
 				B6A15A731FF7464300EBF97B /* Main.storyboard */,
@@ -67,6 +107,94 @@
 			path = holidays;
 			sourceTree = "<group>";
 		};
+		B6E014E3202FD3AC00ABC679 /* helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9531220300A0A00DAFB28 /* ColorsConfig.swift */,
+				B6E014E4202FD3DB00ABC679 /* HOLIDataInitializer.swift */,
+				B6D953182033E86400DAFB28 /* HexUIColor.swift */,
+				B6D9531A2033F64200DAFB28 /* CapitalizeExtension.swift */,
+			);
+			path = helpers;
+			sourceTree = "<group>";
+		};
+		B6E69613200B17E60012A196 /* drawer */ = {
+			isa = PBXGroup;
+			children = (
+				B6E69615200B17FF0012A196 /* BaseViewController.swift */,
+				B6E69614200B17FE0012A196 /* MenuViewController.swift */,
+			);
+			path = drawer;
+			sourceTree = "<group>";
+		};
+		B6E69618200B19750012A196 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6961A200B19850012A196 /* tracking */,
+				B6E69619200B197B0012A196 /* configurations */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		B6E69619200B197B0012A196 /* configurations */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6961C200B19B60012A196 /* interactors */,
+				B6E6961B200B19B00012A196 /* views */,
+			);
+			path = configurations;
+			sourceTree = "<group>";
+		};
+		B6E6961A200B19850012A196 /* tracking */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6961E200B19C30012A196 /* interactors */,
+				B6E6961D200B19BE0012A196 /* views */,
+			);
+			path = tracking;
+			sourceTree = "<group>";
+		};
+		B6E6961B200B19B00012A196 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B6E6961F200B1C370012A196 /* PeriodsConfigurationViewController.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B6E6961C200B19B60012A196 /* interactors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = interactors;
+			sourceTree = "<group>";
+		};
+		B6E6961D200B19BE0012A196 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B6D95314203149D800DAFB28 /* HOLCalendarCell.swift */,
+				B6D9531620314B2900DAFB28 /* HOLCalendarViewController.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		B6E6961E200B19C30012A196 /* interactors */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9531C2033FB9300DAFB28 /* HOLCalendarInteractor.swift */,
+			);
+			path = interactors;
+			sourceTree = "<group>";
+		};
+		DA4DEA0644C26036311D5AAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FD72C45CCB178BF25EE097D9 /* Pods-holidays.debug.xcconfig */,
+				48829532AFBC36F6B9025B37 /* Pods-holidays.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +202,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B6A15A811FF7464300EBF97B /* Build configuration list for PBXNativeTarget "holidays" */;
 			buildPhases = (
+				72411CF289A53D53F8FF47A1 /* [CP] Check Pods Manifest.lock */,
 				B6A15A681FF7464300EBF97B /* Sources */,
 				B6A15A691FF7464300EBF97B /* Frameworks */,
 				B6A15A6A1FF7464300EBF97B /* Resources */,
+				23CBAA336ADB16F7E83BA1F0 /* [CP] Embed Pods Frameworks */,
+				B513FD00D64E50B320084A8B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -134,14 +265,78 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		23CBAA336ADB16F7E83BA1F0 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-holidays/Pods-holidays-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/JTAppleCalendar/JTAppleCalendar.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JTAppleCalendar.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-holidays/Pods-holidays-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		72411CF289A53D53F8FF47A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-holidays-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B513FD00D64E50B320084A8B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-holidays/Pods-holidays-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B6A15A681FF7464300EBF97B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D9531720314B2900DAFB28 /* HOLCalendarViewController.swift in Sources */,
+				B6E69617200B17FF0012A196 /* BaseViewController.swift in Sources */,
+				B6D9531D2033FB9300DAFB28 /* HOLCalendarInteractor.swift in Sources */,
+				B6E69620200B1C370012A196 /* PeriodsConfigurationViewController.swift in Sources */,
+				B6D953192033E86400DAFB28 /* HexUIColor.swift in Sources */,
 				B6A15A781FF7464300EBF97B /* holidays.xcdatamodeld in Sources */,
 				B6A15A721FF7464300EBF97B /* ViewController.swift in Sources */,
+				B6D95315203149D800DAFB28 /* HOLCalendarCell.swift in Sources */,
+				B6D9531B2033F64200DAFB28 /* CapitalizeExtension.swift in Sources */,
+				B6D9531320300A0A00DAFB28 /* ColorsConfig.swift in Sources */,
 				B6A15A701FF7464300EBF97B /* AppDelegate.swift in Sources */,
+				B6E014E5202FD3DB00ABC679 /* HOLIDataInitializer.swift in Sources */,
+				B6E69616200B17FF0012A196 /* MenuViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,6 +415,8 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = "holidays-Bridging-Header.h";
+				"SWIFT_OBJC_BRIDGING_HEADER[arch=*]" = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -269,6 +466,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OBJC_BRIDGING_HEADER = "holidays-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -276,6 +474,7 @@
 		};
 		B6A15A821FF7464300EBF97B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD72C45CCB178BF25EE097D9 /* Pods-holidays.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,6 +490,7 @@
 		};
 		B6A15A831FF7464300EBF97B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 48829532AFBC36F6B9025B37 /* Pods-holidays.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
