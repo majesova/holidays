@@ -113,16 +113,14 @@ extension HOLCalendarViewController : JTAppleCalendarViewDelegate, JTAppleCalend
     
     
     func configureCalendar(_ calendar: JTAppleCalendarView) -> ConfigurationParameters {
-        formatter.dateFormat = "dd MM yyyy"
-        formatter.timeZone = Calendar.current.timeZone
-        formatter.locale = Calendar.current.locale
+       
         let hiredDate = interactor.getHiredDate()
-        
+        //Begin 1 year after hired date
         var dateComponent = DateComponents()
         dateComponent.year = 1
         let startDate = Calendar.current.date(byAdding: dateComponent, to: hiredDate)
         var dateComponentEnd = DateComponents()
-        
+        //Allow capture 1 year from today, TODO:Check logic
         dateComponentEnd.year = 1
         let endDate = Calendar.current.date(byAdding: dateComponentEnd, to: Date())
         let parameters = ConfigurationParameters(startDate: startDate!, endDate: endDate!)
@@ -159,7 +157,7 @@ extension HOLCalendarViewController : JTAppleCalendarViewDelegate, JTAppleCalend
                 unselectDate(cell: validCell, cellState: cellState)
             }
         }else{
-            
+            //manage behavior of a invalid cell
         }
         
     }
