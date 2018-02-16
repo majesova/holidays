@@ -9,14 +9,13 @@
 import UIKit
 import CoreData
 
-class HOLCalendarInteractor: NSObject {
+class HOLCalendarInteractor: DataInteractor {
     
-    let entityNameHoliday = "Holiday"
-    let entityNameJob = "Job"
+ 
     
     func inserDate(date:Date){
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
+        
+        let context = getContext()
         
         let holiday = NSEntityDescription.insertNewObject(forEntityName: self.entityNameHoliday, into: context) as! Holiday
         holiday.date = date
@@ -29,8 +28,7 @@ class HOLCalendarInteractor: NSObject {
     }
     
     func isDateSaved(date:NSDate)->Bool{
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
+        let context = getContext()
         
         let holidayFetch = NSFetchRequest<NSFetchRequestResult>(entityName: entityNameHoliday)
         holidayFetch.predicate = NSPredicate(format: "date == %@", date)
@@ -45,8 +43,7 @@ class HOLCalendarInteractor: NSObject {
     }
     
     func removeDate(date:NSDate){
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        let context = appDelegate.persistentContainer.viewContext
+     let context = getContext()
         
         let holidayFetch = NSFetchRequest<NSFetchRequestResult>(entityName: entityNameHoliday)
         holidayFetch.predicate = NSPredicate(format: "date == %@", date)
@@ -66,10 +63,7 @@ class HOLCalendarInteractor: NSObject {
     
     func getHiredDate()->Date{
         let jobName = "PLENUMSOFT";
-        let appDelegate = UIApplication.shared.delegate as! AppDelegate
-        
-        let context = appDelegate.persistentContainer.viewContext
-        
+        let context = getContext()
         let jobFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "Job")
         jobFetch.predicate = NSPredicate(format: "key == %@", jobName)
         do {

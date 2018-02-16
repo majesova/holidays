@@ -20,6 +20,10 @@
 		B6D953192033E86400DAFB28 /* HexUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D953182033E86400DAFB28 /* HexUIColor.swift */; };
 		B6D9531B2033F64200DAFB28 /* CapitalizeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9531A2033F64200DAFB28 /* CapitalizeExtension.swift */; };
 		B6D9531D2033FB9300DAFB28 /* HOLCalendarInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9531C2033FB9300DAFB28 /* HOLCalendarInteractor.swift */; };
+		B6D9531F20369CD800DAFB28 /* HOLDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9531E20369CD800DAFB28 /* HOLDashboardViewController.swift */; };
+		B6D9532120369CF100DAFB28 /* HOLDashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9532020369CF100DAFB28 /* HOLDashboardInteractor.swift */; };
+		B6D9532320369D0F00DAFB28 /* DataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9532220369D0F00DAFB28 /* DataInteractor.swift */; };
+		B6D9532620369DC700DAFB28 /* PeriodStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9532520369DC600DAFB28 /* PeriodStat.swift */; };
 		B6E014E5202FD3DB00ABC679 /* HOLIDataInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E014E4202FD3DB00ABC679 /* HOLIDataInitializer.swift */; };
 		B6E69616200B17FF0012A196 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E69614200B17FE0012A196 /* MenuViewController.swift */; };
 		B6E69617200B17FF0012A196 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E69615200B17FF0012A196 /* BaseViewController.swift */; };
@@ -44,6 +48,10 @@
 		B6D953182033E86400DAFB28 /* HexUIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HexUIColor.swift; sourceTree = "<group>"; };
 		B6D9531A2033F64200DAFB28 /* CapitalizeExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapitalizeExtension.swift; sourceTree = "<group>"; };
 		B6D9531C2033FB9300DAFB28 /* HOLCalendarInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOLCalendarInteractor.swift; sourceTree = "<group>"; };
+		B6D9531E20369CD800DAFB28 /* HOLDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOLDashboardViewController.swift; sourceTree = "<group>"; };
+		B6D9532020369CF100DAFB28 /* HOLDashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOLDashboardInteractor.swift; sourceTree = "<group>"; };
+		B6D9532220369D0F00DAFB28 /* DataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInteractor.swift; sourceTree = "<group>"; };
+		B6D9532520369DC600DAFB28 /* PeriodStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodStat.swift; sourceTree = "<group>"; };
 		B6E014E4202FD3DB00ABC679 /* HOLIDataInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOLIDataInitializer.swift; sourceTree = "<group>"; };
 		B6E69614200B17FE0012A196 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B6E69615200B17FF0012A196 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -93,6 +101,7 @@
 		B6A15A6E1FF7464300EBF97B /* holidays */ = {
 			isa = PBXGroup;
 			children = (
+				B6D9532420369DB800DAFB28 /* models */,
 				B6E014E3202FD3AC00ABC679 /* helpers */,
 				B6E69618200B19750012A196 /* modules */,
 				B6E69613200B17E60012A196 /* drawer */,
@@ -105,6 +114,14 @@
 				B6A15A761FF7464300EBF97B /* holidays.xcdatamodeld */,
 			);
 			path = holidays;
+			sourceTree = "<group>";
+		};
+		B6D9532420369DB800DAFB28 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				B6D9532520369DC600DAFB28 /* PeriodStat.swift */,
+			);
+			path = models;
 			sourceTree = "<group>";
 		};
 		B6E014E3202FD3AC00ABC679 /* helpers */ = {
@@ -174,6 +191,7 @@
 			children = (
 				B6D95314203149D800DAFB28 /* HOLCalendarCell.swift */,
 				B6D9531620314B2900DAFB28 /* HOLCalendarViewController.swift */,
+				B6D9531E20369CD800DAFB28 /* HOLDashboardViewController.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -182,6 +200,8 @@
 			isa = PBXGroup;
 			children = (
 				B6D9531C2033FB9300DAFB28 /* HOLCalendarInteractor.swift */,
+				B6D9532020369CF100DAFB28 /* HOLDashboardInteractor.swift */,
+				B6D9532220369D0F00DAFB28 /* DataInteractor.swift */,
 			);
 			path = interactors;
 			sourceTree = "<group>";
@@ -324,9 +344,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B6D9532120369CF100DAFB28 /* HOLDashboardInteractor.swift in Sources */,
+				B6D9531F20369CD800DAFB28 /* HOLDashboardViewController.swift in Sources */,
 				B6D9531720314B2900DAFB28 /* HOLCalendarViewController.swift in Sources */,
 				B6E69617200B17FF0012A196 /* BaseViewController.swift in Sources */,
+				B6D9532320369D0F00DAFB28 /* DataInteractor.swift in Sources */,
 				B6D9531D2033FB9300DAFB28 /* HOLCalendarInteractor.swift in Sources */,
+				B6D9532620369DC700DAFB28 /* PeriodStat.swift in Sources */,
 				B6E69620200B1C370012A196 /* PeriodsConfigurationViewController.swift in Sources */,
 				B6D953192033E86400DAFB28 /* HexUIColor.swift in Sources */,
 				B6A15A781FF7464300EBF97B /* holidays.xcdatamodeld in Sources */,
