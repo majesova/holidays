@@ -24,6 +24,8 @@
 		B6D9532120369CF100DAFB28 /* HOLDashboardInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9532020369CF100DAFB28 /* HOLDashboardInteractor.swift */; };
 		B6D9532320369D0F00DAFB28 /* DataInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9532220369D0F00DAFB28 /* DataInteractor.swift */; };
 		B6D9532620369DC700DAFB28 /* PeriodStat.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D9532520369DC600DAFB28 /* PeriodStat.swift */; };
+		B6D953282037FA5200DAFB28 /* HOLDashboardCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D953272037FA5200DAFB28 /* HOLDashboardCell.swift */; };
+		B6D9532A2037FAB800DAFB28 /* HOLDashboardReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D953292037FAB800DAFB28 /* HOLDashboardReusableView.swift */; };
 		B6E014E5202FD3DB00ABC679 /* HOLIDataInitializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E014E4202FD3DB00ABC679 /* HOLIDataInitializer.swift */; };
 		B6E69616200B17FF0012A196 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E69614200B17FE0012A196 /* MenuViewController.swift */; };
 		B6E69617200B17FF0012A196 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6E69615200B17FF0012A196 /* BaseViewController.swift */; };
@@ -52,6 +54,8 @@
 		B6D9532020369CF100DAFB28 /* HOLDashboardInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOLDashboardInteractor.swift; sourceTree = "<group>"; };
 		B6D9532220369D0F00DAFB28 /* DataInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataInteractor.swift; sourceTree = "<group>"; };
 		B6D9532520369DC600DAFB28 /* PeriodStat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeriodStat.swift; sourceTree = "<group>"; };
+		B6D953272037FA5200DAFB28 /* HOLDashboardCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOLDashboardCell.swift; sourceTree = "<group>"; };
+		B6D953292037FAB800DAFB28 /* HOLDashboardReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOLDashboardReusableView.swift; sourceTree = "<group>"; };
 		B6E014E4202FD3DB00ABC679 /* HOLIDataInitializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HOLIDataInitializer.swift; sourceTree = "<group>"; };
 		B6E69614200B17FE0012A196 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		B6E69615200B17FF0012A196 /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 				B6D95314203149D800DAFB28 /* HOLCalendarCell.swift */,
 				B6D9531620314B2900DAFB28 /* HOLCalendarViewController.swift */,
 				B6D9531E20369CD800DAFB28 /* HOLDashboardViewController.swift */,
+				B6D953272037FA5200DAFB28 /* HOLDashboardCell.swift */,
+				B6D953292037FAB800DAFB28 /* HOLDashboardReusableView.swift */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -347,6 +353,7 @@
 				B6D9532120369CF100DAFB28 /* HOLDashboardInteractor.swift in Sources */,
 				B6D9531F20369CD800DAFB28 /* HOLDashboardViewController.swift in Sources */,
 				B6D9531720314B2900DAFB28 /* HOLCalendarViewController.swift in Sources */,
+				B6D953282037FA5200DAFB28 /* HOLDashboardCell.swift in Sources */,
 				B6E69617200B17FF0012A196 /* BaseViewController.swift in Sources */,
 				B6D9532320369D0F00DAFB28 /* DataInteractor.swift in Sources */,
 				B6D9531D2033FB9300DAFB28 /* HOLCalendarInteractor.swift in Sources */,
@@ -355,6 +362,7 @@
 				B6D953192033E86400DAFB28 /* HexUIColor.swift in Sources */,
 				B6A15A781FF7464300EBF97B /* holidays.xcdatamodeld in Sources */,
 				B6A15A721FF7464300EBF97B /* ViewController.swift in Sources */,
+				B6D9532A2037FAB800DAFB28 /* HOLDashboardReusableView.swift in Sources */,
 				B6D95315203149D800DAFB28 /* HOLCalendarCell.swift in Sources */,
 				B6D9531B2033F64200DAFB28 /* CapitalizeExtension.swift in Sources */,
 				B6D9531320300A0A00DAFB28 /* ColorsConfig.swift in Sources */,

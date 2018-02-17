@@ -50,23 +50,6 @@ class HOLIDataInitializer: NSObject {
                     //print("año \(year) benefit \(pivot)")
                 }
                 
-                //print("Data is Initialized")
-            }else{
-                
-                //print("valores guardados")
-                let job = fetchedJObs.first
-                //print(job)
-                //print("job name: \(job!.key!)")
-                //print("job date: \(job!.hiredDate!)")
-                let sort = NSSortDescriptor(key: #keyPath(BenefitConfiguration.year), ascending: true)
-                let daysFetch = NSFetchRequest<NSFetchRequestResult>(entityName: "BenefitConfiguration")
-                daysFetch.sortDescriptors = [sort]
-                let days = try context.fetch(daysFetch) as! [BenefitConfiguration]
-                for day in days{
-                    print("\(day.year),\(day.daysBenefits)")
-                }
-                
-                
             }
             
         } catch {

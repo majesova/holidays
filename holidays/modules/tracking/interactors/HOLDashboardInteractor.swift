@@ -72,16 +72,20 @@ class HOLDashboardInteractor: DataInteractor {
                     periodStat.endDate = Calendar.current.date(byAdding: dateComponentDay, to: periodStat.endDate!)
                 
                     //fill used
-                    
+                    periodStat.usedDays = getNumberOfVacationsBetweenDates(startDate: periodStat.startDate! as NSDate, endDate: periodStat.endDate! as NSDate)
                     
                     //fill available
-                    
+                    periodStat.availableDays = periodStat.daysOfPeriod! - periodStat.usedDays!
                     periodStats.append(periodStat)
                     
                 }
                 
+                periodStats = periodStats.sorted(by: { (p1, p2) -> Bool in
+                    p1.workedYears! > p2.workedYears!
+                })
+                return periodStats
                 for p in periodStats{
-                    print("\(p.workedYears!), \(p.startDate!) ,\(p.endDate!), \(p.daysOfPeriod!)")
+                    print("\(p.workedYears!), \(p.startDate!) ,\(p.endDate!), \(p.daysOfPeriod!), \(p.usedDays!), \(p.availableDays!)")
                 }
             }
             
@@ -92,4 +96,19 @@ class HOLDashboardInteractor: DataInteractor {
         return [PeriodStat]()
     }
     
+    func getNumberOfVacationsBetweenDates(startDate:NSDate, endDate:NSDate)->Int{
+        
+        let context = getContext()
+        let datesFetch = NSFetchRequest<NSFetchRequestResult>(entityName: entityNameHoliday)
+        
+        datesFetch.predicate = NSPredicate(format: "(date >= %@) AND (date <= %@)", startDate, endDate)
+        do{
+            let count = try context.count(for: datesFetch)
+            return count
+            
+        }catch{
+            fatalError("Failed to fetch benefits: \(error)")
+        }
+        
+    }
 }

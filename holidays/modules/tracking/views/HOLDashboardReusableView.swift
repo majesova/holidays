@@ -9,5 +9,10 @@
 import UIKit
 
 class HOLDashboardReusableView: UICollectionReusableView {
-        
+    
+    @IBOutlet weak var lblYear: UILabel!
+    
+    
+    @IBOutlet weak var lblRangeDates: UILabel!
+    
 }

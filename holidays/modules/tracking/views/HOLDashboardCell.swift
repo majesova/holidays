@@ -10,5 +10,9 @@ import UIKit
 
 class HOLDashboardCell: UICollectionViewCell {
     
+    @IBOutlet weak var lblTotal: UILabel!
     
+    @IBOutlet weak var lblUsed: UILabel!
+    
+    @IBOutlet weak var lblAvailable: UILabel!
 }
